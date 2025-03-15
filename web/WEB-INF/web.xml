@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+	 version="6.0">
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <servlet-name>BookingServlet_admin</servlet-name>
+        <servlet-class>controller.BookingServlet_admin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CarServlet_Admin</servlet-name>
+        <servlet-class>controller.CarServlet_Admin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RoadServlet_admin</servlet-name>
+        <servlet-class>controller.RoadServlet_admin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SeatServlet_admin</servlet-name>
+        <servlet-class>controller.SeatServlet_admin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserServlet_Admin</servlet-name>
+        <servlet-class>controller.UserServlet_Admin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookingServlet_admin</servlet-name>
+        <url-pattern>/Booking_admin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CarServlet_Admin</servlet-name>
+        <url-pattern>/Car_admin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RoadServlet_admin</servlet-name>
+        <url-pattern>/Road_admin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SeatServlet_admin</servlet-name>
+        <url-pattern>/Seat_admin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserServlet_Admin</servlet-name>
+        <url-pattern>/User_admin</url-pattern>
+    </servlet-mapping>
+</web-app>
